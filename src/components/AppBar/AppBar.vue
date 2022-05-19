@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="deep-dark" dense dark>
-    <v-app-bar-nav-icon @click="test"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="openDrawer"></v-app-bar-nav-icon>
 
     <v-toolbar-title>Task Tracking System</v-toolbar-title>
 
@@ -18,7 +18,7 @@ export default {
   name: "AppBar",
   methods: {
     ...mapActions(["updateDrawerStatus"]),
-    test: function () {
+    openDrawer: function () {
       this.updateDrawerStatus();
     },
   },
