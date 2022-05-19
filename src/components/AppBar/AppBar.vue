@@ -6,12 +6,9 @@
 
     <v-spacer></v-spacer>
 
-    <div>
-      Hello, Selman Baskaya
-      <v-btn icon>
-        <v-icon>mdi-account</v-icon>
-      </v-btn>
-    </div>
+    <v-btn icon>
+      <v-icon>mdi-account</v-icon>
+    </v-btn>
   </v-app-bar>
 </template>
 
