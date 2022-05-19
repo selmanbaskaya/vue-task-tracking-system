@@ -1,6 +1,27 @@
 <template>
   <v-navigation-drawer v-model="navDrawerStatus" app>
-    navigation-drawer
+    <v-list-item>
+      <v-list-item-content>
+        <v-list-item-title class="text-h6"> 
+            <v-icon color="black">mdi-archive-clock-outline</v-icon>
+            TT System 
+        </v-list-item-title>
+      </v-list-item-content>
+    </v-list-item>
+
+    <v-divider></v-divider>
+
+    <v-list dense nav>
+      <v-list-item v-for="item in drawerItemList" :key="item.title" link>
+        <v-list-item-icon>
+          <v-icon>{{ item.icon }}</v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
   </v-navigation-drawer>
 </template>
 
@@ -9,7 +30,7 @@ import { mapGetters } from "vuex";
 export default {
   name: "NavigationDrawer",
   computed: {
-    ...mapGetters(["drawerStatus"]),
+    ...mapGetters(["drawerStatus", "drawerItemList"]),
     navDrawerStatus: {
       get: function () {
         return this.drawerStatus;
