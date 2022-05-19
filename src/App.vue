@@ -1,31 +1,27 @@
 <template>
   <v-app>
-    <v-navigation-drawer app>
-      navigation-drawer
-    </v-navigation-drawer>
-
-    <v-app-bar app>
-      app-bar
-    </v-app-bar>
+    <navigation-drawer-component />
+    
+    <app-bar-component />
 
     <v-main>
-      <v-container fluid>
-        container
-        <router-view></router-view>
-      </v-container>
+      <v-container fluid> container </v-container>
     </v-main>
 
-    <v-footer app>
-      footer
-    </v-footer>
+    <v-footer app> footer </v-footer>
   </v-app>
 </template>
 
 <script>
+import NavigationDrawer from "./components/NavigationDrawer/NavigationDrawer";
+import AppBar from "./components/AppBar/AppBar";
 export default {
   name: "App",
 
-  components: {},
+  components: {
+    "navigation-drawer-component": NavigationDrawer,
+    "app-bar-component": AppBar,
+  },
 
   data: () => ({
     //
