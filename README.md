@@ -1,4 +1,6 @@
-# task_tracking_system
+# VUE TASK TRACKING SYSTEM
+## version 0.1
+![](tts_v0.1.png)
 
 ## Project setup
 ```
