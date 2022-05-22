@@ -1,6 +1,6 @@
 const state = {
   timeSheetCompStatus: false,
-  dashboardCompStatus: false,
+  dashboardCompStatus: true,
   reportsCompStatus: false,
   projectsCompStatus: false,
 };
