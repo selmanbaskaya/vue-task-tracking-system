@@ -1,5 +1,5 @@
 # VUE TASK TRACKING SYSTEM (In progress)
-## version 0.1
+## version 0.2
 ![](tts_v0.2.png)
 
 ## Project setup
