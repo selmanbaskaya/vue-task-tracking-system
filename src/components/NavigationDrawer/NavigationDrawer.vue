@@ -12,6 +12,10 @@
     <v-divider></v-divider>
 
     <v-list dense nav>
+      <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        > 
       <v-list-item
         v-for="item in drawerItemList"
         :key="item.title"
@@ -26,6 +30,7 @@
           <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
+      </v-list-item-group>
     </v-list>
   </v-navigation-drawer>
 </template>
@@ -43,7 +48,9 @@ export default {
       set: function () {},
     },
   },
-
+  data: () => ({
+    group: null
+  }),
   methods: {
     ...mapActions([
       "updateTimeSheetCompStatus",
