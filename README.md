@@ -1,4 +1,4 @@
-# VUE TASK TRACKING SYSTEM (In progress)
+# VUE | TASK TRACKING SYSTEM (In progress)
 ## version 0.2
 ![](tts_v0.2.png)
 
